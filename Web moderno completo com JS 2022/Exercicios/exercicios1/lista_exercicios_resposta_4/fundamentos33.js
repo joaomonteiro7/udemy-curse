@@ -12,3 +12,11 @@ function concatenar (...args) {
 
 console.log(concatenar(vetorInteiro, vetorDouble))
 console.log(concatenar(vetorDouble, vetorString))
+
+function minhaFuncao(nome, idade, ...outrasInformacoes) {
+    console.log(`Nome: ${nome}`);
+    console.log(`Idade: ${idade}`);
+    console.log(`Outras informações: ${outrasInformacoes}`);
+  }
+  
+  minhaFuncao("Alice", 30, "Endereço: 123 Rua Principal", "Telefone: (555) 555-5555");

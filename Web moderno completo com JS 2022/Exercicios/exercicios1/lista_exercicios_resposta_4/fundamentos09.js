@@ -1,9 +1,9 @@
 function classificaAluno(nota) {
     let notaCorrigida = arredondar(nota)
     if (notaCorrigida >= 40) {
-        console.log(`Aprovado com nota ${notaCorrigida}`);
+        console.log(`Aprovado com nota ${notaCorrigida}`)
     } else {
-        console.log(`Reprovado com nota ${notaCorrigida}`);
+        console.log(`Reprovado com nota ${notaCorrigida}`)
     }
 }
 
@@ -19,9 +19,11 @@ classificaAluno(100)
 classificaAluno(30)
 classificaAluno(38)
 classificaAluno(88)
-classificaAluno(61)
+classificaAluno(84)
 
 
-
+console.log(48%5)
+console.log(5-(48%5))
+console.log(48 + (5-(48%5)))
 
 

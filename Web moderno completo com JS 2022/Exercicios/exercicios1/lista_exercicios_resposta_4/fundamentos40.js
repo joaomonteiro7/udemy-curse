@@ -16,7 +16,7 @@ function conceituarNotas(notas) {
     return conceitos
 }
 
-let notas = [10, 13, 9, 8.2, 2.5, 7.7, 6.8]
+let notas = [10, 1, 9, 8.2, 2.5, 7.7, 6.8]
 let vetorConceitos = conceituarNotas(notas)
 
 console.log(vetorConceitos)

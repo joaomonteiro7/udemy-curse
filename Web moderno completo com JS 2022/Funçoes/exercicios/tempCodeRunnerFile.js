@@ -1,2 +1,0 @@
-
-            piorPontuacao = pontosJogo[i]

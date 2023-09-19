@@ -1,6 +1,6 @@
 const escola = 'estg'
 
-console.log(escola.charAt(2)) // vai ver a letra na posicao 4
+console.log(escola.charAt(0)) // vai ver a letra na posicao 4
 console.log(escola.charCodeAt(3)); // valor na tabela ascii
 console.log(escola.indexOf('s')) // retorna o indice da posicao;
 console.log(escola.substring(1)); // a partir do indice 1 pra frente

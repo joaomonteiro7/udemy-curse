@@ -5,6 +5,7 @@ function trocaValores(vetorA, vetorB) {
             vetorB[i] = vetorA[i] - vetorB[i]
             vetorA[i] = vetorA[i] - vetorB[i]
         }
+
     } else {
         return 'Vetores de tamanhos diferentes.'
     }
@@ -13,7 +14,7 @@ function trocaValores(vetorA, vetorB) {
     console.log('Novo vetor B: ' + vetorB)
 }
 
-let vetorA = [1, 2, 3]
-let vetorB = [4, 5, 6]
+let vetorA = [4, 5, 6]
+let vetorB = [1, 2, 3]
 
 trocaValores(vetorA, vetorB)
