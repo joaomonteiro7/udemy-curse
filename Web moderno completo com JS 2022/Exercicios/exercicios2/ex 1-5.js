@@ -40,10 +40,13 @@ console.log(nomeMes(9))
 
 console.log("__________________ex5____________________")
 const maiorIgual = (num1, num2) =>{
-    let result = (num1 > num2 || num1 == num2)
-    ? true
-    : false
-    return result  
+    if(isNaN(num1) || isNaN(num2)){
+        let result = (num1 > num2 || num1 == num2)
+        ? true
+        : false
+        return result  
+    }
+    return false
 }
 
 console.log(maiorIgual(5, 1))
