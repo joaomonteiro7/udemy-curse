@@ -40,7 +40,7 @@ const simbolo = (param1) => {
 console.log(simbolo(2))
 
 console.log("__________________ex10____________________")
-const array = [1,2,3,4]
+const array = [1,2,3,'o']
 const firstLast = (array) => {
   let result = []
   result.push(array[0], array[array.length-1])

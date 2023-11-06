@@ -4,9 +4,9 @@ const pessoa = {
     peso: 13
 }
 
-console.log(Object.keys(pessoa))
-console.log(Object.values(pessoa))
-console.log(Object.entries(pessoa))
+console.log(Object.keys(pessoa)) // mostras a chave dos obj
+console.log(Object.values(pessoa)) // mostra os valores dos obj
+console.log(Object.entries(pessoa)) // cria um array por cada chave valor do obj
 
 Object.entries(pessoa).forEach(([chave,valor]) => {
     console.log(`${chave} ${valor}`)
