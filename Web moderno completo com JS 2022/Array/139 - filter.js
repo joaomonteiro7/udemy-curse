@@ -5,7 +5,7 @@ const produtos=[
     {nome:'Copo plastico', preco : 18.99 , fragil:false},
 ]
 
-console.log(produtos.filter(function(produto){
+console.log(produtos.filter(produto=>{
     return false
 }))
 

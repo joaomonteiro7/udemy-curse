@@ -43,7 +43,7 @@ function noConsoante(string) {
 }
 console.log(noConsoante('joao'))
 
-console.log("__________________ex24____________________")
+console.log("__________________ex25____________________")
 function keysValues(obj) {
   let keyValueInvert
   keyValueInvert = Object.entries(obj).map(keyValue => keyValue.reverse())

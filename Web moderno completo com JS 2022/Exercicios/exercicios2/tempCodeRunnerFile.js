@@ -1,2 +1,1 @@
-
-    for(letter of string){
+nomeMelhorAluno
