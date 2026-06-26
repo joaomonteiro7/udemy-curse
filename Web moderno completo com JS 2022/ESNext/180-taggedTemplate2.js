@@ -7,6 +7,8 @@ function euro(partes, ...valores) {
   return resultado.join("");
 }
 
+console.log(euro(12, 124, "add"));
+
 const preco = 29.9;
 const precoParcela = 11;
 console.log(`1x de ${preco} ou 3x de ${precoParcela}.`);

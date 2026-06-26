@@ -15,7 +15,7 @@ keys.forEach((valor, chave) => {
   console.log(valor, chave);
 });
 
-console.log(keys.has(`123`));
+console.log(keys.has(123));
 console.log(keys.has({}));
 
 keys.delete(123);
