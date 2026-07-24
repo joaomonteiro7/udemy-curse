@@ -1,24 +1,23 @@
-const fs = require('fs') // file sistem
+const fs = require("fs"); // file sistem
 
-
-const caminho = __dirname + '/162-lerArquivos.json'
+const caminho = __dirname + "/162-lerArquivos.json";
 
 // sincrono
-const conteudo = fs.readFileSync(caminho, 'utf-8')
-console.log(conteudo)
+//const conteudo = fs.readFileSync(caminho, "utf-8");
+//console.log(conteudo)
 
 // assincrono
-fs.readFile(caminho, 'utf-8', (err, conteudo)=>{
-    const config = JSON.parse(conteudo)
-    console.log(config.db.port, config.db.host)
-})
+fs.readFile(caminho, "utf-8", (err, conteudo) => {
+  const config = JSON.parse(conteudo);
+  console.log(conteudo);
+  //console.log(config.db.port, config.db.host)
+});
 
-const config = require('./162-lerArquivos.json')
-console.log(config.db)
-console.log(config.db.host)
+//const config = require("./162-lerArquivos.json");
+//console.log(config.db)
+//console.log(config.db.host)
 
-fs.readdir(__dirname, (err, arquivos)=>{
-    console.log(`conteudo da pasta`)
-    console.log(arquivos)
-})
-
+fs.readdir(__dirname, (err, arquivos) => {
+  console.log(`conteudo da pasta`);
+  //console.log(arquivos);
+});
