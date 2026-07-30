@@ -1,0 +1,32 @@
+protocolo http
+hyper text transfer protocol
+
+stateless -> quando um pc manda um req http para o servidor, e como se fosse a primeira req 
+cliente servidor -> baseado em req resposta, manda se um url com parametros e recebe se uma resposta
+tcp/ip
+html / css / js / midias -> tipos de respostas
+
+fluxo...
+1 - user informa url
+2 - browser faz a req (get/update/delete/post)
+3 -  servidor web gera a resposta (status das respostas)
+4 - browser exibe a pagina
+
+metodos do http
+get - req para recebermos os dados
+post - req para enviarmos os dados
+put - req para atualizar os dados
+delete - req para eliminar os dados
+trace
+options
+connect
+head
+
+? divide o url dos parametros
+
+grupos de status http
+1xx - informacao
+2xx - sucesso
+3xx - redirecionamento
+4xx - erro no cliente
+5xx - erro no servidor

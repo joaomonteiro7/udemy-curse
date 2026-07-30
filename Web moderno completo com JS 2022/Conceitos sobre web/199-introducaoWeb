@@ -1,0 +1,38 @@
+tcp/ip
+->Transmission Control Protocol
+->Internet Protocol
+
+->protocolo baseado em layers, separado em camadas com resposabilidades proprias
+->a camada de cima usa servicos da camada de baixo
+
+->aplicacao -> http, ftp, smtp / comunicaçao processo-a-processo / numero da porta
+->transporte -> tcp(confiavel), udp(melhor esforco) / comunicaçao host-a-host / confiabilidade
+->Internet -> ip -Internet Protocol / conexao entre redes / transferencia de pacotes
+->rede/fisica ->wifi, ethernet / fisica(hardware) e enlace(software)
+
+Anatomia doo ipv4
+classe A
+192 |.168.100.230
+rede| host
+255.0.0.0 (mascara de sub rede)
+
+classe B
+192.169|.100.230
+rede   | host
+255.255.0.0
+
+clase C
+192.198.100 |.230
+rede        | host
+255.255.255.0 (mais ou menos 255 maquinas numa rede)
+
+conceito de porta
+comp 1
+skype / chrome / apache / dropbox
+10.85.0.4
+
+comp 2
+github / chrome / node porta: 8080/ mysql
+10.85.0.5
+
+http://10.85.0.5:8080

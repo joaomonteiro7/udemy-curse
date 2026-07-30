@@ -1,0 +1,37 @@
+apache
+microsoftIIS
+node
+
+web e dns
+
+web server
+23.67.100.3
+
+dns server
+8.8.8.8
+
+www | a | 23.67.100.3 -> cod3r.com.br
+
+cliente www.cod3r.com.br
+
+virtual hosting
+web server -> www.site1.com
+            -> www.site2.com
+            -> www.site3.com
+23.67.100.3
+
+estrutura de pastas
+-> images
+-> css
+-> js
+-> index.html
+-> about.html
+
+web stack
+
+linguagem
+web server | db
+sistemas operacional
+
+LAMP
+linux | apaxe | mysql | php
