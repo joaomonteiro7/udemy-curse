@@ -1,0 +1,27 @@
+e um servico web
+servico que roda em cima de tecnologias da web, e que a comunicacao geralmente e textual 
+
+soap ( simple onject access protocol) wsdl, xml, rpc, burogratico
+rest (representational state transfer) json, http, simples
+
+convencoes restful
+url | metodo | descricao
+/clientes | post | novo cliente
+/clientes | get | obter todos
+/clientes/1 | get | obter cliente 1
+/clientes/10 | put | atualizar cliente 10
+/clientes/5 | delete | apagar cliente 5
+
+soa vs micro service
+
+SOA
+mais antiga
+baseada em servicos
+varios servicos intalados dentro de um ESB (barramento de servicos)
+
+micro servicos
+aplicacao maior e dividir em varias partes
+equipa focadas em um unico servicos
+ex: spotify equipa especifica para a criacao de playlists
+ex: servico de procura, usar mais recursos visto que ha mais demanda
+

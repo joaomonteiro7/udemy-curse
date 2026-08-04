@@ -1,0 +1,9 @@
+traduz os nomes dos dominios em endereco de IP
+dns funciona em cima do proctoco UDO(user datagram protocol) na porta 53 
+
+funcionamento basico do dns:
+1- user informa o indereço o browser
+2- pc envia uma consulta dns para o servidor local
+3- servidor responde com o endereço IP
+4- pc acessa o servidor a partir do ip obtido
+

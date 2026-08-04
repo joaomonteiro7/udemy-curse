@@ -1,0 +1,20 @@
+httpseguro
+seguranca e feita em cima do protocolo que criptografa os dados com um certificado
+
+http + tls (transport layer security protocol)
+
+http + ssl (secure sockets layer protocol)
+
+certificado protocolo
+
+certificado ssl/tls
+certificado com uso de protocolo ssl/tls
+
+HTTPSeguro
+-dados criptografados usando os protocolos TLS ou SSL
+-protege contra interceptacao (MITM - man in the middle)
+-criptografa todas as informacoes, url, cookies e headers
+-usa certificados digitais
+
+autoridades certificadores
+-organizacoes que emitem e validam os certificados

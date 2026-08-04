@@ -1,0 +1,6 @@
+estatico
+- quando o servidor le os arquivos do disco, e que sejam apenas o conteudo dos arquivos que ele usa para renderizar a pagina
+
+
+dinamico
+- que e gerado a partir de codigo por ex informacoes da bd, que o conteudo vai mudando
