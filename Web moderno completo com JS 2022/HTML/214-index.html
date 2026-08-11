@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios</title>
+    <style>
+      #conteudo {
+        padding: 30px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Exercicios html</header>
+    <nav>
+      <a href="exercicios/216-tagTxt.html">Tags txt</a>
+      <a href="exercicios/217-tagTxt2.html">Tags txt 2</a>
+      <a href="exercicios/218-listas.html">Listas</a>
+      <a href="exercicios/219-listasAninhada.html">Listas aninhadas</a>
+    </nav>
+    <section id="conteudo"></section>
+    <footer>web moderno</footer>
+    <script>
+      document.querySelectorAll("a").forEach((link) => {
+        const conteudo = document.getElementById("conteudo");
+
+        link.onclick = (e) => {
+          e.preventDefault();
+
+          fetch(link.href)
+            .then((resp) => {
+              return resp.text();
+            })
+            .then((html) => {
+              conteudo.innerHTML = html;
+            });
+        };
+      });
+    </script>
+  </body>
+</html>

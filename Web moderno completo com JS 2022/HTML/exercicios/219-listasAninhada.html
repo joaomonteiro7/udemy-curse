@@ -1,0 +1,96 @@
+<!-- listas aninhadas -->
+
+<ul class="tree">
+  <li>
+    <span onclick="backend()">backend</span>
+    <ul class="backendItems">
+      <li>
+        <span onclick="app()">app</span>
+        <ul class="appItems">
+          <li>prod.js</li>
+          <li>usuario.js</li>
+          <li>venda.js</li>
+        </ul>
+      </li>
+      <li>
+        <span onclick="config()">config</span>
+
+        <ul class="configItems">
+          <li>banco.js</li>
+          <li>rotas.js</li>
+          <li>servidor.js</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span onclick="frontend()">frontend</span>
+    <ul class="frontendItems">
+      <li>
+        <span onclick="public()">public</span>
+        <ul class="publicItems">
+          <li>app.css</li>
+          <li>app.js</li>
+          <li>index.html</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" />
+
+<script>
+  document.querySelectorAll("span").forEach((span) => {
+    span.onclick = (e) => {
+      const ulItem = span.nextElementSibling;
+      const ulItemDisplay = ulItem.style.display;
+      ulItem.style.display = ulItemDisplay === "none" ? "block" : "none";
+    };
+  });
+
+  /*   function config() {
+    let configItems = document.getElementsByClassName("configItems");
+    if (configItems[0].style.display != "none") {
+      configItems[0].style.display = "none";
+    } else {
+      configItems[0].style.display = "inline";
+    }
+  }
+
+  function app() {
+    let appItems = document.getElementsByClassName("appItems");
+    if (appItems[0].style.display != "none") {
+      appItems[0].style.display = "none";
+    } else {
+      appItems[0].style.display = "inline";
+    }
+  }
+
+  function frontend() {
+    let frontendItems = document.getElementsByClassName("frontendItems");
+    if (frontendItems[0].style.display != "none") {
+      frontendItems[0].style.display = "none";
+    } else {
+      frontendItems[0].style.display = "inline";
+    }
+  }
+
+  function public() {
+    let publicItems = document.getElementsByClassName("publicItems");
+    if (publicItems[0].style.display != "none") {
+      publicItems[0].style.display = "none";
+    } else {
+      publicItems[0].style.display = "inline";
+    }
+  }
+
+  function backend() {
+    let backendItems = document.getElementsByClassName("backendItems");
+    if (backendItems[0].style.display != "none") {
+      backendItems[0].style.display = "none";
+    } else {
+      backendItems[0].style.display = "inline";
+    }
+  } */
+</script>
