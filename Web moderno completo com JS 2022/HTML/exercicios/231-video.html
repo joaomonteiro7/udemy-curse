@@ -1,0 +1,51 @@
+<video id="meuVideo" width="800" height="450" controls autoplay>
+  <source
+    src="http://files.cod3r.com.br/curso-web/video.mp4"
+    type="video/mp4"
+    id="src"
+  />
+  browser nao suporta
+</video>
+
+<div id="progresso" class="progresso">
+  <div id="percentagemProgresso"></div>
+</div>
+
+<div>
+  <button type="button" id="btnPlay" onclick="playVideo()">Play</button>
+  <button type="button" id="btnPause" onclick="pauseVideo()">Pause</button>
+</div>
+
+<style>
+  .progresso {
+    height: 20px;
+    width: 500px;
+    border: solid 1px #444;
+  }
+
+  .progresso > div {
+    background-color: red;
+    color: white;
+    height: 100%;
+    text-align: right;
+    font-size: 14px;
+    width: 0%;
+  }
+</style>
+
+<script>
+  let video = document.getElementById("meuVideo");
+  let barraProgresso = document.getElementById("percentagemProgresso");
+  video.addEventListener("timeupdate", () => {
+    const percentage = (video.currentTime / video.duration) * 100;
+    barraProgresso.style.width = `${percentage}%`;
+    barraProgresso.innerHTML = `${percentage.toFixed(1)}%`;
+  });
+  function playVideo() {
+    video.play();
+  }
+
+  function pauseVideo() {
+    video.pause();
+  }
+</script>
