@@ -1,15 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Unidades #02</title>
     <style>
-        /* ... */
+      /* ... */
+      .fora {
+        position: relative;
+        background-color: orange;
+        width: 400px;
+        height: 400px;
+        padding: 50px;
+      }
+
+      .dentro {
+        background-color: mediumvioletred;
+        height: 100px;
+        width: 100%;
+        position: static; /* conteudo */
+        position: relative; /* conteudo */
+        position: absolute; /* conteudo + padding */
+        position: fixed;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="fora">
-        <div class="dentro"></div>
+      <div class="dentro"></div>
     </div>
-</body>
+  </body>
 </html>
+
+<!-- 
+por padrao a div ja tem a largura a 100%, mas nao tem e altura, pois assume a altura do conteudo da div
+quando nao se usa propriedade position por padrao ja usa a "static"
+-->

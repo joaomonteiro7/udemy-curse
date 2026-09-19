@@ -1,17 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Unidades #01</title>
     <style>
-        /* ... */
-    </style>
-</head>
+      /* ... */
+      .unidades-absolutas {
+        position: absolute;
+        font-size: 40px;
+        padding: 20px;
+        border: solid 5px #222;
+        margin: 30px;
+        width: 4cm; /* pouco usado */
+        height: 20mm; /* pouco usado */
+        top: 150px;
+        left: 200px;
+      }
 
-<body>
+      .unidades-relativas {
+        position: absolute;
+        font-size: 4em;
+        padding: 5%;
+        border: solid 1vw #222; /* vw faz com que seja em relacao ao viewport */
+        width: 20vw;
+        height: 15vh;
+        bottom: 5%;
+        right: 5%;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="unidades-absolutas">Opa!</div>
     <div class="unidades-relativas">Epa!</div>
-</body>
-
+  </body>
 </html>
+
+<!-- 
+dimensoes absolutas
+-> px
+-> cm
+-> mm
+
+dimensoes relativas
+viewport tamanho visivel da pag
+-> vh
+-> vw
+-> vmin
+-> minmax
+
+font em relacao as font do texto
+-> rem
+-> em
+-->
