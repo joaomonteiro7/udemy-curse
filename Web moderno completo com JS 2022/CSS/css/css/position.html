@@ -1,26 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Position</title>
     <style>
-        /* ... */
-    </style>
-</head>
+      /* ... */
 
-<body>
+      div {
+        font-size: 50px;
+        padding: 30px;
+        border: solid 5px #222;
+      }
+
+      .static {
+        top: 100px;
+        left: 100px;
+        background-color: steelblue;
+      }
+
+      .fixed {
+        position: fixed;
+        bottom: 30px;
+        right: 0px;
+        background-color: tomato;
+      }
+
+      .relative1 {
+        position: relative;
+        left: 50px;
+        top: 5px;
+        background-color: seagreen;
+      }
+
+      .absolute1 {
+        position: absolute;
+        left: 350px;
+        top: 120px;
+        background-color: violet;
+      }
+
+      .relative2 {
+        position: relative;
+        left: 250px;
+        top: 2000px;
+        width: 200px;
+        height: 200px;
+        background-color: slategrey;
+      }
+
+      .absolute2 {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: orange;
+      }
+
+      .sticky {
+        position: sticky;
+        background-color: #777;
+        top: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="static">Static (Padrão)</div>
     <div class="fixed">Fixed</div>
     <div class="relative1">Relative</div>
     <div class="absolute1">Absolute</div>
 
     <div class="relative2">
-        <div class="absolute2"></div>
+      <div class="absolute2"></div>
     </div>
 
     <div class="sticky">Sticky</div>
-    <p style="padding-bottom: 2000px;">Opa</p>
-</body>
-
+    <p style="padding-bottom: 2000px">Opa</p>
+  </body>
 </html>
+
+<!-- 
+static
+->faz com que o top e left nao sejam considerados
+
+relative
+-> tem em considerecao o elemento anterior para se posicionar
+-> fica de form absoluta
+
+absolute
+-> tornase absoluto em relacao ao elemento onde esta inserido
+-> se tiver o pai com position relative, ele como filho e absoluto dentro do elemento pai
+-->
