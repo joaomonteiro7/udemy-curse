@@ -1,19 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset='UTF-8'>
+  <head>
+    <meta charset="UTF-8" />
     <title>Modificando HTML #02</title>
-    <link rel='stylesheet' href='css/estilo.css'>
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body class='conteudo exercicio'>
+  <body class="conteudo exercicio">
     <div>
-        <p>Texto Inicial</p>
+      <p>Texto Inicial</p>
     </div>
     <script>
-        // ...
-    </script>
-</body>
+      // ...
+      const div = document.querySelector("div");
+      /* substitui o que esta dentro da div */
+      div.innerHTML = "txt novo";
+      /* substitui o conteudo interno, o proprio elemento tambem */
+      /*       div.outerHTML = "txt novo";*/
+      div.insertAdjacentHTML("beforebegin", "<p>antes inicio </p>");
+      div.insertAdjacentHTML("afterbegin", "<p> depois inicio </p>");
+      div.insertAdjacentHTML("beforeend", "<p> antes fim </p>");
+      div.insertAdjacentHTML("afterend", "<p> depois fim </p>");
 
+      /* somente txt sem tags */
+      console.log(div.innerText);
+    </script>
+  </body>
 </html>
