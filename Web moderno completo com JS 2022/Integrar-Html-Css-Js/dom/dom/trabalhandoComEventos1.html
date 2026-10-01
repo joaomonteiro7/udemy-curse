@@ -1,17 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset='UTF-8'>
+  <head>
+    <meta charset="UTF-8" />
     <title>Trabalhando com Eventos #01</title>
-    <link rel='stylesheet' href='css/estilo.css'>
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body class="conteudo exercicio">
+  <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+      <!-- <a href="https://google.com.br" onclick="navegar(event)">Google</a> -->
+      <a esperar href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+      // ...
+      function navegar(e) {
+        e.preventDefault();
+        console.log("sair em...");
+        setTimeout(() => {
+          const link = e.target;
+          window.location.href = link.href;
+        }, 5000);
+      }
+
+      /*       const a = document.querySelector("a");
+      a.onclick = navegar; */
+
+      const a = document.querySelector("[esperar]");
+      a.onclick = navegar;
     </script>
-</body>
+  </body>
+</html>
